@@ -1,7 +1,7 @@
 ---
 output:
-  pdf_document: default
   html_document: default
+  pdf_document: default
 ---
 # WeightedPvalue: A software for integrative genomic data analysis via p-value weight adjustment 
 
@@ -30,10 +30,10 @@ Source.R, RunSim.R, and RunRealData.R.
 
 * RunRealData.R contains the r code for analyzing a dataset. Need to source the Source.R file in the beginning. The method is designed to identify $X -> Z-> Y$, for example: miRNA -> mRNA -> Disease. The column names of the dataset need to contain X, Y, Z  to indicate the types of data. The main output is stored in the object ans which contains two columns:
 1. minp: weighted p-values ($p^*$) derived using our proposed method 
-2. h.min: a vector of 0 or 1 indicating whether the corresponding Xs are significant based on the Holm's generalized sequential rejective procedure
+2. h.min: a vector of 0 or 1 indicating whether the corresponding Xs are significant, based on the Holm's generalized sequential rejective procedure
 
 #Reference
-1. Ho Y.-Y., Ma C., Zhang W., Huang H.-H., Habiger J.D., Nho R. (2020) A powerful integrative genomics apporach to incorporate both prior knowledge and multiple data types through p-value weight adjustment (Under Review). 
+1. Ho Y.-Y., Ma C., Zhang W., Huang H.-H., Habiger J.D., Nho R. (2020) A powerful integrative genomics approach to incorporate both prior knowledge and multiple data types through p-value weight adjustment (Under Review). 
 
 2. Li, L., Kabesch, M., Bouzigon, E., Demenais, F., Farrall, M., Moffatt, M. F., Lin, X., and
 Liang, L. (2013). Using eQTL weights to improve power for genome-wide association
