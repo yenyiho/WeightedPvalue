@@ -1,3 +1,8 @@
+---
+output:
+  pdf_document: default
+  html_document: default
+---
 # WeightedPvalue: A software for integrative genomic data analysis via p-value weight adjustment 
 
 This is a software for integrative genomic data analysis via p-value weight adjustment (1). The method is designed to identify $X -> Z-> Y$, for example: miRNA -> mRNA -> Disease. For each triplet, the p-value (p) is first calculated based on the associations between the variables in X and Y. Then weights ($w^*$) are derived according to the strength of associations between X, Z, and Z and Y. The weighted p-value ($p^*$) is calculated as: 
