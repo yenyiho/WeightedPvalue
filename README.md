@@ -1,2 +1,2 @@
 # WeightedPvalue
-Powerful integrative genomic data analysis software through p-value weight adjustment
+A software for integrative genomic data analysisvia p-value weight adjustment
