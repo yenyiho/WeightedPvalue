@@ -3,7 +3,7 @@ source("Source.R")
 
 ############################### Type I error 
 ### b1=0, b2=0, p1=0.5, q1=0.5
-sim<-1000
+sim<-100
 old<-proc.time()
 n=300
 nmiR=9
@@ -21,3 +21,5 @@ new<-proc.time()
 new-old
 fwout1<-rowMeans(outS1)
 fwout1
+
+

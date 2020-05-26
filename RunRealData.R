@@ -3,7 +3,7 @@
 source("Source.R")
 
 ### Create simulated data
-sim<-1000
+sim<-100
 old<-proc.time()
 n=300
 nmiR=9
@@ -19,7 +19,7 @@ dat<-simDataS1fr(n=n, beta1=beta1, beta2=beta2, nmiR=nmiR, mE=mE)
 ###Input data object with this format  
 head(dat)
 
-wp<-weight(data, p1=p1, q1=q1)
+wp<-weight(dat, p1=p1, q1=q1)
 rawp<-wp[[1]]
 lip<-wp[[1]]/wp[[2]]
 lip<-ifelse(lip>1, 1, lip)
@@ -41,6 +41,6 @@ bon.li<-as.numeric(any(lip <= 0.05/length(rawp)))
 bon.minp<-as.numeric(any(minp <= 0.05/length(rawp)))
 bon.minsc<-as.numeric(any(wminsc <= 0.05/length(rawp)))
 
-ans<-c(bon.raw, bon.li, bon.minp, bon.minsc, hom.raw, hom.li, hom.min, hom.scp)
+ans<-cbind(minp,h.min)
 
 
